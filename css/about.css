@@ -1,0 +1,139 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background-image: linear-gradient(to bottom right, #1e88e5, #fff);
+  font-family: Arial, Helvetica, sans-serif;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  margin: 20px;
+}
+
+nav {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: #333;
+  color: #fff;
+  z-index: 9999;
+}
+
+nav ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+nav li {
+  display: inline-block;
+}
+
+nav a {
+  color: #fff;
+  text-decoration: none;
+  display: block;
+  padding: 0.5rem 1rem;
+}
+
+nav a:hover {
+  color: #ff0;
+  background-color: #666;
+}
+
+.page-title {
+  text-align: center;
+  color: #fff;
+  font-size: 2rem;
+  text-transform: uppercase;
+  padding-bottom: 10px;
+  border-bottom: 2px solid #ff9800;
+  width: 70%;
+  margin: 0 auto;
+  margin-top: 50px;
+}
+
+h2 {
+  text-align: center;
+  border-bottom: 3px solid #999;
+  width: 50%;
+  margin: 0 auto;
+  padding-bottom: 10px;
+}
+
+p {
+  margin: 10px 0;
+  line-height: 1.5;
+  text-indent: 1em;
+}
+
+.about-section {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.card {
+  flex: 0 0 calc(33.33% - 20px);
+  background-color: lightgray;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  margin: 10px;
+  padding: 50px;
+  transition: transform 0.3s ease-in-out;
+}
+
+.container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+#mapIframeContainer iframe {
+  border-radius: 10px;
+  margin-top: 20px;
+}
+
+.location-section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 50px;
+}
+
+.location-section .card {
+  width: 100%;
+  margin: 10px auto;
+}
+
+footer {
+  background-color: #333;
+  color: #fff;
+  padding: 10px;
+  text-align: center;
+}
+
+footer ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+}
+
+footer li {
+  margin-right: 10px;
+}
+
+footer a {
+  color: #fff;
+  text-decoration: none;
+  padding: 0.5rem 1rem;
+}
+
+footer a:hover {
+  color: #ff0;
+}

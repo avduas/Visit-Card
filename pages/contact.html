@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact</title>
+    <link href="../css/contact.css" rel="stylesheet" />
+  </head>
+  <body>
+    <h1 class="page-title">Contact</h1>
+    <nav>
+      <ul>
+        <li><a href="../index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+    
+    <section class="contact-section">
+      <div class="container">
+        <div class="card">
+          <h2>Contact Form</h2>
+          <form id="contact-form">
+            <div class="form-group">
+              <label for="first-name">First Name *</label>
+              <input type="text" id="first-name" name="first-name" required>
+            </div>
+            <div class="form-group">
+              <label for="last-name">Last Name</label>
+              <input type="text" id="last-name" name="last-name">
+            </div>
+            <div class="form-group">
+              <label for="email">Email *</label>
+              <input type="email" id="email" name="email" required>
+            </div>
+            <div class="form-group">
+              <label for="comment">Comment *</label>
+              <textarea id="comment" name="comment" rows="4" required></textarea>
+            </div>
+            <div class="form-group">
+              <label for="additional-info">Additional Information</label>
+              <input type="file" id="additional-info" name="additional-info">
+            </div>
+            <input type="submit" id="submit-btn" value="Submit" disabled>
+          </form>
+        </div>
+      </div>
+    </section>
+    <footer>
+      <ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+      <div>
+        &#169; This page was built using:
+        <span id="footer-languages"></span>
+      </div>
+    </footer>
+
+    <script src="../js/Footer.js"></script>
+    <script src="../js/contact.js"></script>
+  </body>
+  </html>
